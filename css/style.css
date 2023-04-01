@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    font-family: 'PT Mono', monospace;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: #918778;
+    width: 100%;
+    height: 381px;
+}
+header div {
+    width: 100%;
+    height: auto;
+}
+img.img-top {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 512px;
+    padding-top: 45px ;
+}
+#content{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+#content div {
+    color: #f0f8ff;
+    text-align: center;
+    background-color: #918778;
+    font-size: 40px;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+@media (max-width: 767px) {
+    #content div{
+        margin-bottom: 35px;
+        margin-top: 50px;
+    }
+    #content p {
+        padding: 0 45px 30px 45px !important;
+    }
+    img.img-top {
+
+    }
+
+}
+#content p {
+    text-align: center;
+    padding: 0 200px;
+}
+.menu-bar {
+    border-radius: 25px;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0 10px;
+    margin: 30px 0 0 0;
+}
+.menu-bar li {
+    list-style: none;
+    color: white;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.menu-bar li:nth-child(2) {
+    font-size: 24px;
+}
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+}
+.menu-bar li:hover {
+    color: black;
+}
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+    img.img-top {
+        margin-top: 64px;
+        max-width: 384px;
+        width: 100%;
+        height: 212px;
+    }
+    #content div  {
+        font-size: 22px;
+    }
+    .menu-bar {
+        margin-bottom: 16px;
+    }
+    .menu-bar li {
+        padding: 6px 2px;
+        font-size: 16px;
+    }
+    .menu-bar li:nth-child(2) {
+        font-size: 20px;
+    }
+
+}
