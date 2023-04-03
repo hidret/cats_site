@@ -38,7 +38,8 @@ img.img-top {
     background-color: #918778;
     font-size: 40px;
     padding: 25px;
-    margin-top: 50px;
+    margin-top: 61px;
+    margin-bottom: 50px;
     border-radius: 50px;
 }
 @media (max-width: 767px) {
@@ -55,7 +56,7 @@ img.img-top {
 }
 #content p {
     text-align: center;
-    padding: 0 200px;
+    padding: 0 250px;
 }
 .menu-bar {
     border-radius: 25px;
