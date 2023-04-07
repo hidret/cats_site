@@ -205,12 +205,12 @@ img.img-top {
     display: block;
     position: relative;
     margin: 50px auto;
-    width: 50%;
-    overflow: hidden;
-    border-radius: 50px;
+    width: 80%;
+
 }
 .cssSlider .slides {
     overflow: hidden;
+    border-radius: 50px;
     width: 100%;
     height: 50vmin;
     margin-top: 0;
@@ -220,15 +220,17 @@ img.img-top {
 
 }
 .cssSlider .slides > li {
-    width: 100%;
+    width: 60%;
     height: 50vmin;
+    border-radius: 50px;
     position: absolute;
     z-index: 1;
     overflow: hidden;
 }
 .cssSlider .slides > li > img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
 
 }
 
@@ -244,74 +246,42 @@ img.img-top {
     padding: 0;
     margin: 0;
     list-style: none;
+    border-radius: 50px;
 
 }
 .cssSlider .thumbnails > li {
     float: left;
     width: 20%;
+    border-radius: 50px;
 }
 .cssSlider .thumbnails > li > a {
     display: block;
+    border-radius: 50px;
 }
 .cssSlider .thumbnails > li > a > img {
     width: 100%;
     height: auto;
     margin-bottom: 0;
+    border-radius: 50px;
 }
 
 .cssSlider .slides li:target {
     z-index: 3;
     -webkit-animation: slide 1s 1;
+    border-radius: 50px;
 }
-.cssSlider .slides li:not(:target) {
 
-}
-@-webkit-keyframes slide {
-    0% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-}
-@keyframes slide {
-    0% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-}
-@-webkit-keyframes hidden {
-    0% {
-        z-index: 2;
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-    100% {
-        z-index: 2;
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-}
-@keyframes hidden {
-    0% {
-        z-index: 2;
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-    }
-    100% {
-        z-index: 2;
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-}
+
+
+
+
 @media (max-width: 1015px){
     .cssSlider {
         width: 80%;
+        height: 70%;
+    }
+    .cssSlider .slides > li > img {
+        width: 100%;
+        height: 100%;
     }
 }
