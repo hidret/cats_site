@@ -198,18 +198,16 @@ img.img-top {
     .menu-bar li:nth-child(2) {
         font-size: 20px;
     }
-    .cssSlider .slides{
-        margin: 0 auto;
-    }
 
 }
 
 
 .cssSlider {
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     width: 60%;
     height: 50%;
+    text-align: center;
 
 }
 .cssSlider .slides {
@@ -219,7 +217,7 @@ img.img-top {
     height: 50vmin;
     margin: 0 auto;
     margin-bottom: 30px;
-
+    text-align: center;
     margin-right: 0;
     padding: 0;
     list-style: none;
@@ -234,13 +232,14 @@ img.img-top {
     position: absolute;
     z-index: 1;
     overflow: hidden;
+    text-align: center;
 
 }
 .cssSlider .slides > li > img {
     max-width: 430px;
     height: 100%;
     border-radius: 50px;
-
+    text-align: center;
 }
 
 .cssSlider .thumbnails {
@@ -277,12 +276,6 @@ img.img-top {
 
 
 
-@media (max-width: 1015px){
-    .cssSlider {
-        max-width: 420px;
-        height: 70%;
-        margin: 20px auto;
-    }
 
 
-}
+
