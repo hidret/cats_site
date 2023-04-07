@@ -1,19 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     justify-content: center;
     font-family: 'PT Mono', monospace;
 }
+.gallery{
+    background-color: #918778;
+}
+.site-container {
+    margin: 50px auto;
+    max-width: calc(100% - 80px);
+}
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2rem;
+}
+.article-image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.article-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.article-card:hover {
+    box-shadow: 0 4px 20px 0 rgba(34,68,123,0.2);
+    cursor: pointer;
+}
+.article-content {
+    padding: 2rem;
+}
+.article-content .card-category {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b82a7;
+    display: block;
+    text-decoration: none;
+}
+.article-content .card-title {
+    margin: 1rem 0;
+    color: #22447b;
+}
+.article-content .card-excerpt {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 0;
+}
+@media screen and (min-width: 768px) {
+    .site-container {
+        max-width: 608px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .site-container {
+        max-width: 1156px;
+    }
+}
+
+
+
+
 header nav {
     display: flex;
     justify-content: center;
 }
-header {
+header.header-main {
     background-color: #918778;
     width: 100%;
     height: 381px;
 }
+
 header div {
     width: 100%;
     height: auto;
@@ -60,8 +133,10 @@ img.img-top {
 }
 .menu-bar {
     border-radius: 25px;
+    height: fit-content;
     display: inline-flex;
     background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     align-items: center;
     padding: 0 10px;
@@ -69,12 +144,16 @@ img.img-top {
 }
 .menu-bar li {
     list-style: none;
-    color: white;
     padding: 12px 16px;
     margin: 0 8px;
     position: relative;
     cursor: pointer;
     white-space: nowrap;
+
+}
+.menu-bar li a {
+    text-decoration: none;
+    color: white;
 }
 .menu-bar li:nth-child(2) {
     font-size: 24px;
@@ -90,7 +169,7 @@ img.img-top {
     transition: 0.2s;
     border-radius: 25px;
 }
-.menu-bar li:hover {
+.menu-bar li a:hover {
     color: black;
 }
 .menu-bar li:hover::before {
@@ -120,4 +199,116 @@ img.img-top {
         font-size: 20px;
     }
 
+}
+
+
+.cssSlider {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+.cssSlider .slides {
+    overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 70vmin;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.cssSlider .slides > li {
+    width: 80%;
+    height: 70vmin;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.cssSlider .slides > li > img {
+    width: 100%;
+    height: auto;
+}
+
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+
+.cssSlider .thumbnails {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.cssSlider .thumbnails > li {
+    float: left;
+    width: 20%;
+}
+.cssSlider .thumbnails > li > a {
+    display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+    width: 100%;
+    height: auto;
+}
+
+.cssSlider .slides li:target {
+    z-index: 3;
+    -webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+    -webkit-animation: hidden 1s 1;
+}
+@-webkit-keyframes slide {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes hidden {
+    0% {
+        z-index: 2;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        z-index: 2;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+@keyframes hidden {
+    0% {
+        z-index: 2;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        z-index: 2;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+
+
+.detesa {
+    width: 1280px;
 }
