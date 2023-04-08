@@ -135,7 +135,7 @@ img.img-top {
     border-radius: 25px;
     height: fit-content;
     display: inline-flex;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #b5ada3;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     align-items: center;
@@ -173,8 +173,8 @@ img.img-top {
     color: black;
 }
 .menu-bar li:hover::before {
-    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
-    box-shadow: 0 3px 20px 0 black;
+    background: linear-gradient(to bottom,#d9d5d0, #c7c1b9);
+    box-shadow: 0 3px 20px 0 #918778;
     transform: scale(1.2);
 }
 
@@ -263,12 +263,14 @@ img.img-top {
         float: left;
         width: 20%;
         border-radius: 50px;
+        text-align: center;
     }
 
     .cssSlider .thumbnails > li > a {
         display: block;
         margin: 10px;
         border-radius: 50px;
+        text-align: center;
     }
 
     .cssSlider .thumbnails > li > a > img {
@@ -276,12 +278,14 @@ img.img-top {
         height: auto;
         margin-bottom: 0;
         border-radius: 50px;
+        text-align: center;
     }
 
     .cssSlider .slides li:target {
         z-index: 3;
         -webkit-animation: slide 1s 1;
         border-radius: 50px;
+        text-align: center;
     }
 
     @media (max-width: 930px) {
@@ -313,5 +317,16 @@ img.img-top {
         .cssSlider .thumbnails {
             margin: 100px auto;
         }
-
     }
+.supp
+{
+    background-color: #d9d5d0;
+}
+.sup{
+    width: 70%;
+    height: 80vmin; /* Размеры */
+    background: #d9d5d0;
+    border-radius: 50px; /* Радиус скругления */
+    margin: 50px auto;
+    box-shadow: 0 0 30px 30px #c7c1b9;
+}
