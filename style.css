@@ -173,7 +173,7 @@ img.img-top {
     color: black;
 }
 .menu-bar li:hover::before {
-    background: linear-gradient(to bottom,#d9d5d0, #c7c1b9);
+    background: linear-gradient(to bottom, #d9d5d0, #c7c1b9);
     box-shadow: 0 3px 20px 0 #918778;
     transform: scale(1.2);
 }
