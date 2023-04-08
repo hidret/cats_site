@@ -205,15 +205,15 @@ img.img-top {
 .cssSlider {
     display: block;
     margin: 30px auto;
-    width: 60%;
-    height: 50%;
+    width: 65vmin;
+    height: 65vmin;
     text-align: center;
 
 }
 .cssSlider .slides {
 
     border-radius: 50px;
-    width: 100%;
+    width: 65vmin;
     height: 50vmin;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -226,7 +226,7 @@ img.img-top {
 
 
 .cssSlider .slides > li {
-    width: 60%;
+    width: 65vmin;
     height: 50vmin;
     border-radius: 50px;
     position: absolute;
@@ -235,7 +235,7 @@ img.img-top {
 
 }
 .cssSlider .slides > li > img {
-    max-width: 430px;
+    max-width: 65vmin;
     height: 100%;
     border-radius: 50px;
     text-align: center;
@@ -257,6 +257,7 @@ img.img-top {
 }
 .cssSlider .thumbnails > li > a {
     display: block;
+    margin: 10px;
     border-radius: 50px;
 }
 .cssSlider .thumbnails > li > a > img {
@@ -272,23 +273,30 @@ img.img-top {
     border-radius: 50px;
 }
 
-@media (max-width: 1015px) {
+@media (max-width: 930px) {
     .cssSlider {
-        width: 80%;
+        width: 65vmin;
         margin-bottom: 20px;
     }
 
     .cssSlider .slides > li {
-        width: 80%;
+        width: 65vmin;
         height: 65vmin;
     }
 
     .cssSlider .thumbnails {
         margin: 150px auto;
     }
+    .cssSlider .thumbnails > li > a {
+        margin: 0;
+
+    }
 }
-
-
+@media (max-width: 500px) {
+    .cssSlider .thumbnails {
+        margin: 100px auto;
+    }
+}
 
 
 
