@@ -123,9 +123,6 @@ img.img-top {
     #content p {
         padding: 0 45px 30px 45px !important;
     }
-    img.img-top {
-
-    }
 }
 #content p {
     text-align: center;
@@ -324,9 +321,18 @@ img.img-top {
 }
 .sup{
     width: 70%;
-    height: 80vmin; /* Размеры */
+    height: 70%;
     background: #d9d5d0;
-    border-radius: 50px; /* Радиус скругления */
-    margin: 50px auto;
+    border-radius: 50px;
+    margin: 5% auto;
     box-shadow: 0 0 30px 30px #c7c1b9;
+    text-align: center;
+    padding: 30px;
+}
+.sup img{
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
