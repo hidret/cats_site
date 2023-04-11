@@ -22,8 +22,29 @@
     <img src="imgs/sup.png" width="230" height="190">
     <p>phone number of Mr. Johnson-Cat: </p>
     <p>+meow(MeO)wee-mE-oW</p>
+    <div class="sup1">
+        <p>Support Form</p>
+        <form id="supform">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="write your full name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="write your email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="write your phone" pattern="^\+(?:[0-9] ?){6,14}[0-9]$" required>
+            <label for="message">Your problem:</label>
+            <textarea id="message" name="message" placeholder="write your problem" required></textarea>
+            <label for="choise">Way to get an answer</label>
+            <select id="choise" name="choise" required>
+                <option value="1">E-mail</option>
+                <option value="2">Phone</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+    </div>
 </div>
 
 
+
+</form>
 </body>
 </html>
